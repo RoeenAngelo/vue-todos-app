@@ -6,12 +6,16 @@ import { RouterLink } from 'vue-router'
     <header>
         <nav class="container">
             <div class="branding">
-                <img src="@/assets/Vue_Logo_Black.png" alt="">
+                <RouterLink to="/">
+                    <img src="@/assets/Vue_Logo_Black.png" alt="">
+                </RouterLink>
+
                 <h1>Vue Todos</h1>
             </div>
             <ul class="nav-routes">
                 <RouterLink to="/">Home</RouterLink>
                 <RouterLink to="/about">About</RouterLink>
+                <RouterLink to="/contact">Contact</RouterLink>
             </ul>
         </nav>
     </header>
