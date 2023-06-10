@@ -10,7 +10,9 @@ import { RouterLink } from 'vue-router'
                     <img src="@/assets/Vue_Logo_Black.png" alt="">
                 </RouterLink>
 
-                <h1>Vue Todos</h1>
+                <RouterLink to="/">
+                    <h1>Vue Todos</h1>
+                </RouterLink>
             </div>
             <ul class="nav-routes">
                 <RouterLink to="/">Home</RouterLink>
@@ -39,7 +41,8 @@ header {
             img {
                 max-width: 50px;
             }
-            h1 {
+            h1, a {
+                text-decoration: none;
                 font-size: 28px;
             }
         }
